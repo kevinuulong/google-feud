@@ -1,6 +1,6 @@
-import { suggestions } from "./getSuggestions.js";
+import { getSuggestions } from "./getSuggestions.js";
 
-suggestions('scandinavian')
-    .then(suggested => {
-        console.log(suggested)
+getSuggestions('scandinavian')
+    .then(suggestions => {
+        console.log(suggestions)
     })

@@ -1,5 +1,137 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
-html, body {
-  font-family: 'Montserrat', sans-serif;
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f0f0f6;
+  margin: 0;
+  color: #2b2c30;
+}
+
+h1 {
+  margin: 0;
+  background-color: #fff;
+  height: 98px;
+  line-height: 98px;
+  text-align: center;
+  font-size: 39px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 28px;
+  display: inline-block;
+  padding: 28px;
+}
+
+#gameBox {
+  width: 868px;
+  height: calc(100vh - 210px);
+  margin: 28px;
+  vertical-align: top;
+  position: relative;
+}
+
+#scoreCard {
+  width: 210px;
+  text-align: center;
+  margin-top: 28px;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #2b2c30;
+  outline: none;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #2b2c30;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#query {
+  display: inline-block;
+}
+
+ol {
+  list-style: none;
+  counter-reset: li;
+  font-size: 1.2em;
+  line-height: 56px;
+  overflow: hidden;
+  -webkit-columns: 2;
+          columns: 2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+li::before {
+  content: "." counter(li);
+  font-weight: 600;
+  display: inline-block;
+  width: 28px;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  text-align: right;
+  direction: rtl;
+  color: #2b2c30;
+}
+
+li {
+  counter-increment: li;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+#score {
+  margin-bottom: 56px;
+}
+
+#scoreCard {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.button {
+  display: inline-block;
+  right: 56px;
+  position: absolute;
+  margin-top: 14px;
+  background-color: #2F80ED;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 14px;
+  height: 39.2px;
+  padding-right: 14px;
+  padding-left: 14px;
+  text-align: center;
+  line-height: 39.2px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.revealed {
+  color: #f0f0f6;
+  background-color: #f0f0f6;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 5.6px;
 }
 /*# sourceMappingURL=main.css.map */

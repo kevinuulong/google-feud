@@ -1,5 +1,5 @@
 
-export function suggestions(query) {
+export function getSuggestions(query) {
     return fetch(`https://api.codetabs.com/v1/proxy?quest=http://suggestqueries.google.com/complete/search?client=chrome&hl=en&q=${query}`)
     .then(response => response.json())
     .then(data => {

@@ -1,5 +1,122 @@
 @import "fonts";
 
-html, body {
-    font-family: 'Montserrat', sans-serif;
+$size: 28px;
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f0f0f6;
+  margin: 0;
+  color: #2b2c30;
+}
+
+h1 {
+  margin: 0;
+  background-color: #fff;
+  height: $size * 3.5;
+  line-height: $size * 3.5;
+  text-align: center;
+  font-size: 39px;
+  user-select: none;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: $size;
+  display: inline-block;
+  padding: $size;
+}
+
+#gameBox {
+  width: $size * 31;
+  height: calc(100vh - #{$size * 7.5});
+  margin: $size;
+  vertical-align: top;
+  position: relative;
+}
+
+#scoreCard {
+  width: $size * 7.5;
+  text-align: center;
+  margin-top: $size;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #2b2c30;
+  outline: none;
+  display: inline-block;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #2b2c30;
+  width: fit-content;
+}
+#query {
+  display: inline-block;
+}
+
+ol {
+  list-style: none;
+  counter-reset: li;
+  font-size: 1.2em;
+  line-height: $size * 2;
+  overflow: hidden;
+  columns: 2;
+  user-select: none;
+}
+
+li::before {
+  content: "." counter(li);
+  font-weight: 600;
+  display: inline-block;
+  width: $size;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  text-align: right;
+  direction: rtl;
+  color: #2b2c30;
+}
+
+li {
+  counter-increment: li;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+#score {
+  margin-bottom: $size * 2;
+}
+
+#scoreCard {
+  user-select: none;
+}
+
+.button {
+  display: inline-block;
+  right: $size * 2;
+  position: absolute;
+  margin-top: $size / 2;
+  background-color: #2F80ED;
+  color: #fff;
+  font-weight: 600;
+  border-radius: $size / 2;
+  height: $size + $size * .4;
+  padding-right: $size / 2;
+  padding-left: $size / 2;
+  text-align: center;
+  line-height: $size + $size * .4;
+  cursor: pointer;
+  user-select: none;
+}
+
+.revealed {
+  color: #f0f0f6;
+  background-color: #f0f0f6;
+  width: fit-content;
+  height: $size * .2;
 }
